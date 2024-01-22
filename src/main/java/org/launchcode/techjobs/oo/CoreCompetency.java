@@ -9,12 +9,12 @@ public class CoreCompetency {
     private String value;
 
     public CoreCompetency() {
-        this.id = nextId;
+        id = nextId;
         nextId++;
     }
 
     public CoreCompetency(String value) {
-        this();
+        this(); // Call the empty constructor to initialize the id field.
         this.value = value;
     }
 
@@ -38,8 +38,7 @@ public class CoreCompetency {
         return Objects.hash(id);
     }
 
-    // TODO: Use the "Generate" tool to add a getter and setter for the 'value' field but
-    //  ONLY a getter for the 'id' field.
+    // Getters and Setters:
 
     public String getValue() {
         return value;
@@ -52,5 +51,4 @@ public class CoreCompetency {
     public int getId() {
         return id;
     }
-
 }
